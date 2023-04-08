@@ -33,5 +33,33 @@ Feito isso, parabéns você instalou o MySQL SERVER
 
 ---
 
+## Passo 3: Verificar funcionamento do MySQL SERVER
+
+Para que você possa verificar a sua conexão poderá utilizar os seguintes comandos:
+
+- Saber a versão do mysql instalado:
+
+    ```mysql --version ```
+
+- Saber o status de conexão do servidor 
+
+    ```service mysql status```
+
+OBS.: Para reconhecer se está conectado, após ter digitado o comando acima verifique o parâmetro Active da mensagem no terminal se estiver 
+<span style="color:green">active(running)</span> 
+então o servidor está conectado, caso contrário estará desconectado.
+
+- Iniciar a conexão do servidor MySQL
+
+    ```sudo serice mysql start```
+
+- Parar a conexão do servidor MySQL
+
+    ```sudo service mysql stop ```
+
+- Reiniciar a conexão do Servidor MySQL
+
+    ```sudo service mysql restart ```
+
 
 
