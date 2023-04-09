@@ -77,7 +77,7 @@ OBS.: Após cada pergunta será solicitado digitar Y ou N para confirmar a alter
 
 OBS2.: O mais recomendado é digitar Y para todas as configurações
 
-- 1ª pergunta: Change the root password? [Y/n] - Digite Y para trocar a senha
+- 1ª pergunta: Change the root password? [Y/n] - Tradução: Trocar a senha do root?
     - Em seguida será solicitado a nova senha e a confirmação da senha
 
 - 2ª pergunta: Remove anonymous user? [Y/n] - Tradução: Remover usuários anônimos.
