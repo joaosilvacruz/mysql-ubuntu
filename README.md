@@ -71,6 +71,39 @@ Comece digitando o código abaixo para iniciar a instalação segura:
 
 ```sudo mysql_secure_installation ```
 
+### Passo 4.1: POSSÍVEL ERRO NESSA INSTALAÇÃO
+
+Caso apareça o seguinte erro:
+
+*Failed! Error: SET PASSWORD has no significance for user 'root'@'localhost*
+
+Será necessário abrir um outro terminal para executar o comando abaixo para que a instalação de segurança seja terminada:
+
+``` sudo killall -9 mysql_secure_installation ```
+
+Em seguida inicie o MySQL com o comando:
+
+```sudo mysql```
+
+No terminal do MySQL execute a seguinte SQL query:
+
+```ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY 'DIGITEOSEUPASSWORDAQUI'```
+
+Por fim, feche o terminal do MySQL com o comando:
+
+```exit```
+
+Assim, execute novamente a instalação segura:
+
+```sudo mysql_secure_installation ```
+
+Quando for solicitado a senha digite "DIGITEOSEUPASSWORDAQUI" ou a senha que você definiu nesse campo anteriormente, então continue a instalação conforme o passo 4.2
+
+---
+
+
+
+
 A partir de agora serão feitas algumas perguntas para a segurança do seu MySQL, são elas:
 
 OBS.: Após cada pergunta será solicitado digitar Y ou N para confirmar a alteração
@@ -87,6 +120,10 @@ OBS2.: O mais recomendado é digitar Y para todas as configurações
 - 4ª pergunta: Remove test database and acess to it? [Y/n] - Tradução: Remover o banco de dados de teste e o acesso a ele.
 
 - 5ª pergunta: Reload privilege tables now? [Y/n] - Tradução: Recarregar as tabelas de privilégios para garantir que as alterações tenham efeito.
+
+---
+
+## Passo 5: 
 
 
 
