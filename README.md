@@ -61,5 +61,32 @@ então o servidor está conectado, caso contrário estará desconectado.
 
     ```sudo service mysql restart ```
 
+---
+
+## Passo 4: Configurar a segurança do MySQL
+
+Apesar de ter instalado o MySQL, ele não está seguro, assim iremos melhorar a segurança do seu MySQL.
+
+Comece digitando o código abaixo para iniciar a instalação segura:
+
+```sudo mysql_secure_installation ```
+
+A partir de agora serão feitas algumas perguntas para a segurança do seu MySQL, são elas:
+
+OBS.: Após cada pergunta será solicitado digitar Y ou N para confirmar a alteração
+
+OBS2.: O mais recomendado é digitar Y para todas as configurações
+
+- 1ª pergunta: Change the root password? [Y/n] - Digite Y para trocar a senha
+    - Em seguida será solicitado a nova senha e a confirmação da senha
+
+- 2ª pergunta: Remove anonymous user? [Y/n] - Tradução: Remover usuários anônimos.
+
+- 3ª pergunta: Disallow root login remotely? [Y/n] - Tradução: Desabilitar o login remoto de root.
+
+- 4ª pergunta: Remove test database and acess to it? [Y/n] - Tradução: Remover o banco de dados de teste e o acesso a ele.
+
+- 5ª pergunta: Reload privilege tables now? [Y/n] - Tradução: Recarregar as tabelas de privilégios para garantir que as alterações tenham efeito.
+
 
 
