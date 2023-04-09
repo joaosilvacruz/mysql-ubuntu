@@ -73,7 +73,7 @@ Comece digitando o código abaixo para iniciar a instalação segura:
 
 ### Passo 4.1: POSSÍVEL ERRO NESSA INSTALAÇÃO
 
-Caso apareça o seguinte erro:
+Caso apareça o erro abaixo siga os passos para resolver, caso não apareça pule para o Passo 4.2 deste tutorial:
 
 *Failed! Error: SET PASSWORD has no significance for user 'root'@'localhost*
 
@@ -101,8 +101,7 @@ Quando for solicitado a senha digite "DIGITEOSEUPASSWORDAQUI" ou a senha que voc
 
 ---
 
-
-
+### Passo 4.2: Continuação da configuração de segurança
 
 A partir de agora serão feitas algumas perguntas para a segurança do seu MySQL, são elas:
 
