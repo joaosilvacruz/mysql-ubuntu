@@ -136,7 +136,13 @@ Em seguida digite a seguinte MySQL query:
 
 Por fim, digite ```exit``` para sair do terminal do MySQL.
 
+<span style="color:red">IMPORTANTE!</span> Após ter feito esse procedimento, para acessar o MySQL no terminal será necessário utilizar o comando:
 
+``` sudo mysql -u root -p ```
+
+E não mais apenas ```sudo mysql```
+
+---
 
 
 
