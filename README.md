@@ -122,7 +122,21 @@ OBS2.: O mais recomendado é digitar Y para todas as configurações
 
 ---
 
-## Passo 5: 
+## Passo 5: Alterar forma de autenticação do MySQL
+
+Apesar de termos definido uma senha, pode ser que ao utilizar ```sudo mysql``` o terminal o MySQL abra normalmente sem solicitar a senha definida. Isso ocorre porque a autenticação se dá utilizando o plug-in auth_socket ao invés da senha. 
+
+Caso deseje inicializar com a senha insira no seu terminal:
+
+```sudo mysql```
+
+Em seguida digite a seguinte MySQL query:
+
+```ALTER USER 'root'@'localhost' IDENTIFIED WITH caching_sha2_password BY 'DIGITEOSEUPASSWORDAQUI';```
+
+Por fim, digite ```exit``` para sair do terminal do MySQL.
+
+
 
 
 
